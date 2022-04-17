@@ -1,0 +1,28 @@
+{
+  "name": "e2enode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^3.12.0",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.2.167",
+    "@swc/jest": "^0.2.20",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.24",
+    "@types/supertest": "^2.0.12",
+    "jest": "^27.5.1",
+    "prisma": "^3.12.0",
+    "supertest": "^6.2.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  }
+}
