@@ -18,4 +18,15 @@ describe("CreateLesson service", () => {
       ])
     );
   });
+
+  it("should NOT be bale to create a new lesson with invalid title", async () => {
+    const inMemoryLessonsRepository = new InMemoryLessonsRepository();
+    const createLesson = new CreateLesson(inMemoryLessonsRepository);
+
+    await expect(
+      createLesson.execute({ title: "" })
+    ).rejects.toThrow();
+
+    expect(inMemoryLessonsRepository.items).toEqual([]);
+  });
 });
